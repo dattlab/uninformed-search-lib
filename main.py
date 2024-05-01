@@ -12,21 +12,11 @@ def main() -> None:
     ]
 
     bt.add_node_list(nodes)
-    """
-    When the list of nodes where inserted in BinaryTree(),
-    it would look like this:
-          +---------5---------+
-          |                   |
-          .                   .
-      +---25---+         +---75---+
-      |        |         |        |
-      .        .         .        .
-    +-10-+   +-33-+    +-56-+  +-89-+
-    |    |   |    |    |    |  |    |
-    .    .   .    .    .    .  .    .
-    4   11   30  40    52  61  82  95
-    """
 
+    """
+    When the list of nodes were inserted in BinaryTree(),
+    it would look like this:
+    """
     print("""
     Example Tree:
 
