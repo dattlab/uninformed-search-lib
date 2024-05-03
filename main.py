@@ -28,7 +28,7 @@ def main() -> None:
 
     while True:
         algo_option = input("Enter here: ")
-        if algo_option in {"1", "2"}:
+        if algo_option in {"1", "2", "3"}:
             break
 
 
