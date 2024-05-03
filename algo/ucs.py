@@ -35,3 +35,22 @@ def ucs(graph, start, goal):
 
     print("Goal not reachable.")
     return None, None
+
+graph = {
+    'S': {'A': 3, 'B': 2, 'C': 6},
+    'A': {'S': 3, 'B': 1, 'D': 1},
+    'B': {'S': 2, 'A': 1, 'D': 4, 'E': 2},
+    'C': {'S': 6, 'E': 5},
+    'D': {'A': 1, 'B': 4, 'E': 1, 'F': 5},
+    'E': {'B': 2, 'C': 5, 'D': 1, 'F': 3},
+    'F': {'D': 5, 'E': 3}
+}
+
+start_node = 'S'
+goal_node = 'F'
+
+result_node, total_cost = ucs(graph, start_node, goal_node)
+if result_node:
+    print("Goal reached! Path found:", result_node, "Total cost:", total_cost)
+else:
+    print("Goal not reachable.")
